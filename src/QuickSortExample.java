@@ -11,7 +11,7 @@ public class QuickSortExample {
         }
     }
 
-    public static void quickSort(int[] array, int start, int end) {
+    private static void quickSort(int[] array, int start, int end) {
         if (start < end) {
             int pivot = division(array, start, end);
             quickSort(array, start, pivot - 1);
@@ -19,7 +19,7 @@ public class QuickSortExample {
         }
     }
 
-    public static int division(int[] array, int start, int end) {
+    private static int division(int[] array, int start, int end) {
         int pivot = array[start];
         int left = start + 1;
         int right = end;
