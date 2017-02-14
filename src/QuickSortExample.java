@@ -34,14 +34,16 @@ public class QuickSortExample {
             if (left > right) {
                 break;
             } else {
-                int temp = array[left];
-                array[left] = array[right];
-                array[right] = temp;
+                swap(array, left, right);
             }
         }
+        swap(array, start, right);
+        return right;
+    }
+
+    private static void swap(int[] array, int start, int right) {
         int temp = array[start];
         array[start] = array[right];
         array[right] = temp;
-        return right;
     }
 }
