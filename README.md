@@ -1,1 +1,1 @@
-# This small programs is usefull for studies
+# This repository contains small programs which are useful for studies and interviews.
